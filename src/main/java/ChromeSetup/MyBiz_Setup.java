@@ -26,7 +26,7 @@ public class MyBiz_Setup {
         ChromeOptions options = new ChromeOptions();
         Map<String, String> mobileEmulation = new HashMap<>();
         mobileEmulation.put("deviceName", "Galaxy S5");
-        options.addArguments("headless");
+       // options.addArguments("headless");
         options.addArguments("--remote-allow-origins=*");
         options.setExperimentalOption("mobileEmulation", mobileEmulation);
         ChromeDriver driver = new ChromeDriver(options);

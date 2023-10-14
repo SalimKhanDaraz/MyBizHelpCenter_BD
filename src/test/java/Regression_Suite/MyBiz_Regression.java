@@ -18,9 +18,9 @@ import java.io.IOException;
 import java.time.LocalTime;
 
 import static ChromeSetup.MyBiz_Wait.driver;
+import static org.testng.TestRunner.PriorityWeight.priority;
 
 public class MyBiz_Regression {
-
 
     MyBiz_Setup DB = new MyBiz_Setup(driver);
 
@@ -31,6 +31,15 @@ public class MyBiz_Regression {
         MyBiz_Wait.driver = DB.driver();
     }
 
+//    @AfterTest()
+//    public void TakeScreenshot() throws IOException {
+//
+//        File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//        File dest = new File(System.getProperty("user.dir")+ "/Images/" + LocalTime.now() + ".jpg");
+//        FileUtils.copyFile(screenshot,dest);
+//        Allure.addAttachment("FailureTestCase",new ByteArrayInputStream(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES)));
+//    }
+
     @AfterTest
     public void HC_TearDown() throws InterruptedException
     {
@@ -38,15 +47,6 @@ public class MyBiz_Regression {
         MyBiz_Teardown MTD = new MyBiz_Teardown(driver);
         MTD.CloseBrowser(driver);
 
-    }
-
-    @AfterTest()
-    public void TakeScreenshot() throws IOException {
-
-        File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        File dest = new File(System.getProperty("user.dir")+ "/Images/" + LocalTime.now() + ".jpg");
-        FileUtils.copyFile(screenshot,dest);
-        Allure.addAttachment("FailureTestCase",new ByteArrayInputStream(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES)));
     }
 
     @Test(priority = 1)
