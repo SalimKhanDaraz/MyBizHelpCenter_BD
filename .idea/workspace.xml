@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abc85fce-7d8d-49ba-a8ec-100fde46b496" name="Changes" comment="Commented TakeScreenshot method" />
+    <list default="true" id="abc85fce-7d8d-49ba-a8ec-100fde46b496" name="Changes" comment="Allure plugin added in the POM" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +66,21 @@
       <option name="project" value="LOCAL" />
       <updated>1697300081066</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Allure plugin added in the POM">
+      <created>1697300463759</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697300463759</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Allure plugin added in the POM">
+      <created>1697300551599</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697300551599</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,6 +98,7 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="added remote-allow-origins property" />
     <MESSAGE value="Commented TakeScreenshot method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commented TakeScreenshot method" />
+    <MESSAGE value="Allure plugin added in the POM" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allure plugin added in the POM" />
   </component>
 </project>

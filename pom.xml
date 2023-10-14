@@ -91,29 +91,14 @@
 
     <build>
         <plugins>
-
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.21.0</version>
                 <configuration>
-                    <suiteXmlFiles>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
-                    </suiteXmlFiles>
-                    <testFailureIgnore>true</testFailureIgnore>
-                    <!--suppress UnresolvedMavenProperty -->
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
-                    <!--                    <systemPropertyVariables>-->
-                    <!--                        <allure.results.directory>${allure.result.dir}</allure.results.directory>-->
-                    <!--                    </systemPropertyVariables>-->
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 
